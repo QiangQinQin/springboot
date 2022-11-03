@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    # 驱动路径
+    driver-class-name: com.mysql.jdbc.Driver
+    #数据库的jdbc连接
+    url: jdbc:mysql://127.0.0.1:3306/tulun
+    #用户名
+    username: root
+    #密码
+    password: 123456
+
+
+mybatis:
+   #指定mapper.xml的路径
+  mapper-locations: classpath:mapper/*.xml
+  #对应类取别名
+  type-aliases-package: com.tulun.pojo
