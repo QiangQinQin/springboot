@@ -8,6 +8,16 @@ spring:
     username: root
     #密码
     password: 123456
+  jpa:
+    show-sql: true
+    database-platform: org.hibernate.dialect.H2Dialect
+  jackson:
+    default-property-inclusion: non_null
+  redis:
+    host: 127.0.0.1
+    database: 0
+    port: 6379
+    password: 123456
 
 
 mybatis:
