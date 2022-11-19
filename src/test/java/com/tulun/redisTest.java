@@ -49,11 +49,4 @@ public class redisTest
         System.out.println( stringRedisTemplate.opsForValue().get("test"));
     }
 
-    @Test
-    public void testLog() throws Exception {
-        String out = "test1111";
-        log.info("idass:{}", out);
-        log.error("idass:{}", out);
-        log.warn("idass:{}", out);
-    }
 }
