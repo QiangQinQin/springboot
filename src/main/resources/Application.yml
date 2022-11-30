@@ -20,3 +20,7 @@ mybatis:
   mapper-locations: classpath:mapper/*.xml
   #对应类取别名
   type-aliases-package: com.tulun.pojo
+
+logging:
+  config:
+    classpath: log4j2.xml
