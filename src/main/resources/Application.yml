@@ -24,3 +24,7 @@ mybatis:
 logging:
   config:
     classpath: log4j2.xml
+
+# 测试@value取值
+test:
+  key: 20221204
