@@ -13,7 +13,21 @@ import org.springframework.web.bind.annotation.RequestParam;
  */
 public class testGetParam {
 
-//    localhost:8080/demo1?name=Aaron&age=18
+    //https://www.cnblogs.com/yangsanluo/p/14893194.html
+////     localhost:8080/introduction?booId=1?gg=2?version=3?platform=4?vps=5
+//@GET
+//@Path("/introduction")
+//Response introduction(
+//        @QueryParam("bookId") Integer bookId,
+//        @QueryParam("gg") Integer gg,
+//        @QueryParam("version") String version,
+//        @QueryParam("platform") String platform,
+//        @QueryParam("vps") String vps
+//);
+////    后台就获得booId=1    gg=2    version=3       platform=4       vps=5
+
+
+    //    localhost:8080/demo1?name=Aaron&age=18
     @RequestMapping(value="/demo1")
     public void testRequestParam(@RequestParam String name, @RequestParam int age ){
         System.out.println("get name is : " + name + ", age: " + age); //   get name is : Aaron, age: 18
@@ -36,4 +50,7 @@ localhost:8080/demo2/Bob/12
         System.out.println("get name is : " + name + ", id: " + id); //      get name is : Bob, id: 12
         return;
     }
+
+
+
 }
