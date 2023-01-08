@@ -28,26 +28,24 @@ public class HelloApplication
        /*
        获取注解[@org.springframework.boot.autoconfigure.SpringBootApplication(scanBasePackageClasses=[], exclude=[], proxyBeanMethods=true, excludeName=[], scanBasePackages=[]), @org.springframework.context.annotation.Configuration(value=, proxyBeanMethods=true), @org.mybatis.spring.annotation.MapperScan(sqlSessionFactoryRef=, sqlSessionTemplateRef=, lazyInitialization=, annotationClass=interface java.lang.annotation.Annotation, basePackageClasses=[], nameGenerator=interface org.springframework.beans.factory.support.BeanNameGenerator, markerInterface=class java.lang.Class, basePackages=[], value=[com.tulun.mapper], factoryBean=class org.mybatis.spring.mapper.MapperFactoryBean, defaultScope=)]
        * */
-        System.out.println("获取注解"+Arrays.toString(new HelloApplication().getClass().getAnnotations()) );
-
-
-
+//        System.out.println("获取注解"+Arrays.toString(new HelloApplication().getClass().getAnnotations()) );
 
     }
 
-    @Autowired
-    private  TestGetValue testGetValue;
-
-    @Autowired
-   private Environment environment;
-    @Bean
-    public  void  testGetKey(){
-//         方式1：
-        System.out.println("test获取@Value的值： "+testGetValue.getTestKey());
-
-//        方式2：
-        System.out.println("通过environment获取@Value的值"+environment.getProperty("test.key"));
-    }
+//    @Autowired
+//    private  TestGetValue testGetValue;
+//
+//    @Autowired
+//   private Environment environment;
+//
+//    @Bean
+//    public  void  testGetKey(){
+////         方式1：
+//        System.out.println("test获取@Value的值： "+testGetValue.getTestKey());
+//
+////        方式2：
+//        System.out.println("通过environment获取@Value的值"+environment.getProperty("test.key"));
+//    }
 
 //    @Autowired
 //    private StringRedisTemplate stringRedisTemplate;
