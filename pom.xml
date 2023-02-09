@@ -29,6 +29,19 @@
 
   <dependencies>
 
+<!--Http Client-->
+    <dependency>
+      <groupId>org.apache.httpcomponents</groupId>
+      <artifactId>httpclient</artifactId>
+      <version>4.5.3</version>
+    </dependency>
+    <dependency>
+      <groupId>com.alibaba</groupId>
+      <artifactId>fastjson</artifactId>
+      <version>1.2.28</version>
+    </dependency>
+
+
 <!--    @Slf4j：https://blog.csdn.net/WuHey/article/details/120822057-->
     <dependency>
       <groupId>org.projectlombok</groupId>
