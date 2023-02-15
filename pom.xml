@@ -29,7 +29,7 @@
 
   <dependencies>
 
-<!--Http Client-->
+<!--Http Client     https://www.cnblogs.com/kitor/p/11235762.html   -->
     <dependency>
       <groupId>org.apache.httpcomponents</groupId>
       <artifactId>httpclient</artifactId>
